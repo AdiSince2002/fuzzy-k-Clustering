@@ -1,0 +1,108 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #fbed96, #abecd6);
+}
+
+main {
+    margin: 1rem 0 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+canvas {
+    border: 10px solid black;
+    background-color: white;
+}
+
+.canvas-picking-active {
+    cursor: crosshair;
+    border: 1px solid #38f;
+}
+
+.controls {
+    display: flex;
+    width: 1024px;
+    border: 1px solid #333;
+    margin-top: 10px;
+}
+
+.controls,
+.controls * {
+    font-size: 14px;
+}
+
+.controls input {
+    border: 1px none #666;
+    border-bottom-style: solid;
+    text-align: center;
+}
+
+.controls input:focus {
+    border-color: #38f;
+}
+
+#add-data-points-randomly-count,
+#run-steps-in-loop-milliseconds {
+    width: 50px;
+}
+
+#add-centroids-randomly-count {
+    width: 30px;
+}
+
+.controls button {
+    padding: 2px 5px;
+    border: 2px #333 outset;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0.25em;
+}
+
+.controls button:hover {
+    scale: 1.05;
+    background-color: #333;
+    border-color: transparent;
+    color: white;
+}
+
+.controls-group {
+    flex-grow: 1;
+    margin: 0;
+    display: inline-block;
+    border-right: 5px solid #333;
+    padding: 5px 10px 10px;
+    background: #abecd6;
+}
+
+.controls-group:last-child {
+    border-right-style: none;
+}
+
+.controls-group dt {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.controls-group dd {
+    margin: 0 0 5px;
+}
+
+.top-division:before {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
